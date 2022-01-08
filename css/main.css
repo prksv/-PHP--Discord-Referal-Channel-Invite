@@ -117,20 +117,24 @@ margin-bottom: 50px;
 }
 
 .invite--info__remove {
-    align-self: end; 
+    height: 100%;
     background-color: rgba(255, 71, 71, 1);
+    padding-top: 8px;
+    align-self: flex-end;
+    border-radius: 30px;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.invite--info__button {
     height: 100%;
     width: 120px;
-    padding-top: 8px;
-    padding-right: 1px;
-    border-radius: 30px;
-    padding-left: 58px;
     text-decoration: none;
     color: #ffffff;
     transition: 0.5s;
 }
 
-.invite--info__remove:hover {
+.invite--info__button:hover {
     background-color: rgb(255, 121, 121);
     transition: 0.5s;
 }
@@ -203,4 +207,10 @@ a {
     bottom: 45px;
     left: 50%;
     transform: translate(-50%);
+}
+
+@media (max-width: 500px) {
+    .invites {
+        margin: 0;
+    }
 }

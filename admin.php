@@ -27,7 +27,7 @@ $bloggers = R::find('bloggers');
                          <div class="invite--info" data-blogger="'. $blogger->id .'">
                          <span class="invite--info__link"><a href="http://'. $_SERVER['HTTP_HOST'] .'/'. $blogger->nickname .'">'. $_SERVER['HTTP_HOST'] .'/'. $blogger->nickname .'</a></span> 
                          <span class="invite--info__clicks">'. $blogger->clicks .' нажатий</span> 
-                         <a onclick="removeBlogger('. $blogger->id .')" class="invite--info__remove">Удалить</a> 
+                         <span class="invite--info__remove"><a onclick="removeBlogger('. $blogger->id .')" class="invite--info__button">Удалить</a></span> 
                      </div>
                          ';
                      }
